@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Lista de tareas </title>
+	<meta  chartset="UTF-8">
+	<link rel="stylesheet" href="estilos.css"/>
+	<script>
+				function cambiar(tarea) {
+					var estado = document.getElementById(tarea);
+					if(estado.textContent === "[PENDIENTE]") {
+						estado.textContent = "[HECHO]";
+						document.getElementById(tarea).style.color = '#00FF00';
+						
+					} else {
+						estado.textContent = "[PENDIENTE]";
+						document.getElementById(tarea).style.color = '#FF0000';
+					}
+				}
+			</script>
+				
+<head>
+
+<body>
+
+<h3> Lista de tareas escritas en HTML</h3>
+<hr>
+<div>
+  <ol>
+     <li onclick="javascript:cambiar('tarea1');"> <span id="tarea1">[PENDIENTE]</span>Corregir exámenes de pendientes</li>
+	 <li onclick="javascript:cambiar('tarea2');"> <span id="tarea2">[PENDIENTE]</span>Terminar el dibujo del Robot</li>
+	 <li onclick="javascript:cambiar('tarea3');"> <span id="tarea3">[PENDIENTE]</span>Realizar pedido microlog</li> 
+	 <li onclick="javascript:cambiar('tarea4');"> <span id="tarea4">[PENDIENTE]</span>tarea</li> 
+	 <li onclick="javascript:cambiar('tarea5');"> <span id="tarea5">[PENDIENTE]</span>tarea </li> 
+	 <li onclick="javascript:cambiar('tarea6');"> <span id="tarea6">[PENDIENTE]</span>tarea</li>
+  </ol>
+</div>
+<hr>
+
+</body>
+</html>

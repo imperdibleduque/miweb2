@@ -1,0 +1,16 @@
+body{
+	font-size: 18px;
+}
+li{
+	cursor:pointer;
+}
+span{
+	font-weight:bold;
+}
+span{
+	color:red;
+}
+li:hover{
+	text-decoration:underline;
+	
+}
